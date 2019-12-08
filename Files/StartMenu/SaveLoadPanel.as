@@ -36,12 +36,10 @@
     function set isSaving(abFlag)
     {
         bSaving = abFlag;
-        //return (this.isSaving());
-        null;
     } // End of the function
     function get isShowingCharacterList()
     {
-        return (showingCharacterList);
+        return showingCharacterList;
     } // End of the function
     function set isShowingCharacterList(abFlag)
     {
@@ -52,16 +50,14 @@
             ScreenShotRect_mc._visible = !showingCharacterList;
         } // end if
         PlayerInfoText._visible = !showingCharacterList;
-        //return (this.isShowingCharacterList());
-        null;
     } // End of the function
     function get selectedIndex()
     {
-        //return (SaveLoadList_mc.selectedIndex());
+        return SaveLoadList_mc.selectedIndex;
     } // End of the function
     function get platform()
     {
-        return (iPlatform);
+        return iPlatform;
     } // End of the function
     function set platform(aiPlatform)
     {
@@ -87,20 +83,18 @@
             ScreenshotHolder._visible = false;
             ScreenShotRect_mc._visible = false;
         } // end if
-        //return (this.platform());
-        null;
     } // End of the function
     function get batchSize()
     {
-        return (iBatchSize);
+        return iBatchSize;
     } // End of the function
     function get numSaves()
     {
-        //return (SaveLoadList_mc.length());
+        return SaveLoadList_mc.length;
     } // End of the function
     function get selectedEntry()
     {
-        //return (SaveLoadList_mc.entryList()[SaveLoadList_mc.__get__selectedIndex()]);
+        return SaveLoadList_mc.entryList[SaveLoadList_mc.selectedIndex];
     } // End of the function
     function get LastSelectedIndexMemory()
     {
@@ -108,7 +102,7 @@
         {
             lastSelectedIndexMemory = Math.max(0, SaveLoadList_mc.__get__entryList().length - 1);
         } // end if
-        return (lastSelectedIndexMemory);
+        return lastSelectedIndexMemory;
     } // End of the function
     function onSaveLoadItemPress(event)
     {
